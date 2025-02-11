@@ -1,7 +1,6 @@
 import './App.css';
 
 const App = () => {
-  const name = 'React';
   return (
     <div>
       <h1 className="text-3xl font-bold underline">Hello world!</h1>

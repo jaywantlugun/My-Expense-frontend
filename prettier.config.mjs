@@ -8,6 +8,7 @@ const config = {
   useTabs: false,
   semi: true,
   singleQuote: true,
+  quoteProps: 'consistent',
   trailingComma: 'all',
   bracketSpacing: true,
   arrowParens: 'always',
