@@ -1,6 +1,6 @@
 import './App.css';
 
-function app() {
+const App = () => {
   const name = 'React';
   return (
     <div>
@@ -10,6 +10,6 @@ function app() {
       </button>
     </div>
   );
-}
+};
 
-export default app;
+export default App;
