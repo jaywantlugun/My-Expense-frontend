@@ -44,7 +44,7 @@ This folder contains **static files** such as images, icons, fonts, and global s
 import logo from '../assets/images/logo.png';
 
 function Header() {
-  return <img src={logo} alt='Logo' />;
+  return <img src={logo} alt="Logo" />;
 }
 ```
 
@@ -63,7 +63,7 @@ If an image needs to be dynamic (e.g., from a CMS or user upload), **store it in
 import HomeIcon from '../assets/icons/home.svg';
 
 function Sidebar() {
-  return <img src={HomeIcon} alt='Home' />;
+  return <img src={HomeIcon} alt="Home" />;
 }
 ```
 
@@ -78,7 +78,7 @@ function Icon({ name }) {
 ✅ **Usage:**
 
 ```jsx
-<Icon name='home' />
+<Icon name="home" />
 ```
 
 ---

@@ -52,10 +52,10 @@ export default MainLayout;
 
 ```jsx
 <Routes>
-  <Route path='/' element={<MainLayout />}>
+  <Route path="/" element={<MainLayout />}>
     <Route index element={<Home />} />
-    <Route path='about' element={<About />} />
-    <Route path='contact' element={<Contact />} />
+    <Route path="about" element={<About />} />
+    <Route path="contact" element={<Contact />} />
   </Route>
 </Routes>
 ```
@@ -71,8 +71,8 @@ import { Outlet } from 'react-router-dom';
 
 function AuthLayout() {
   return (
-    <div className='auth-container'>
-      <div className='auth-box'>
+    <div className="auth-container">
+      <div className="auth-box">
         <Outlet /> {/* Renders Login or Signup page */}
       </div>
     </div>
@@ -86,9 +86,9 @@ export default AuthLayout;
 
 ```jsx
 <Routes>
-  <Route path='/auth' element={<AuthLayout />}>
-    <Route path='login' element={<Login />} />
-    <Route path='signup' element={<Signup />} />
+  <Route path="/auth" element={<AuthLayout />}>
+    <Route path="login" element={<Login />} />
+    <Route path="signup" element={<Signup />} />
   </Route>
 </Routes>
 ```
@@ -106,9 +106,9 @@ import Navbar from '../components/Navbar';
 
 function DashboardLayout() {
   return (
-    <div className='dashboard-container'>
+    <div className="dashboard-container">
       <Sidebar />
-      <div className='dashboard-content'>
+      <div className="dashboard-content">
         <Navbar />
         <Outlet />
       </div>
@@ -123,9 +123,9 @@ export default DashboardLayout;
 
 ```jsx
 <Routes>
-  <Route path='/dashboard' element={<DashboardLayout />}>
+  <Route path="/dashboard" element={<DashboardLayout />}>
     <Route index element={<Dashboard />} />
-    <Route path='settings' element={<Settings />} />
+    <Route path="settings" element={<Settings />} />
   </Route>
 </Routes>
 ```

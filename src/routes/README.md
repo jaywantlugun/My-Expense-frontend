@@ -11,8 +11,8 @@ This folder manages React Router routes in one place.
 Example:
 
 ```jsx
-<Route path='/' element={<MainLayout />}>
+<Route path="/" element={<MainLayout />}>
   <Route index element={<Home />} />
-  <Route path='dashboard' element={<Dashboard />} />
+  <Route path="dashboard" element={<Dashboard />} />
 </Route>
 ```

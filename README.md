@@ -85,7 +85,7 @@ This will generate an optimized production-ready build in the **`/dist`** folder
 | ---------------------- | ------------------------------ | ---------------------------- | ---------------------- |
 | 🚀 **Speed**           | 🔥 **Super fast** (Rust-based) | 🐢 Slower (JavaScript-based) | 🐌 Slowest             |
 | 🔄 **Hot Reload**      | ✅ Yes                         | ✅ Yes                       | ❌ No                  |
-| 🏗 **Type Checking**    | ❌ No (`tsc --noEmit` needed)  | ❌ No                        | ✅ Yes                 |
+| 🏗 **Type Checking**   | ❌ No (`tsc --noEmit` needed)  | ❌ No                        | ✅ Yes                 |
 | 📦 **Bundle Size**     | ✅ Smaller                     | ❌ Larger                    | ❌ N/A (only compiles) |
 | 🔧 **Recommended For** | Performance-focused apps       | Legacy projects              | Type checking only     |
 
@@ -120,9 +120,9 @@ import About from '../pages/About';
 function AppRoutes() {
   return (
     <Routes>
-      <Route path='/' element={<MainLayout />}>
+      <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
-        <Route path='about' element={<About />} />
+        <Route path="about" element={<About />} />
       </Route>
     </Routes>
   );
