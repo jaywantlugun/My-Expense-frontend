@@ -17,7 +17,7 @@ export const loginUser =
       dispatch(loginSuccess(response.data));
       fetchUserInfo(dispatch);
     } catch (error) {
-      dispatch(loginFailed(error.message));
+      dispatch(loginFailed('Failed to fetch user info' + error));
     }
   };
 
@@ -42,6 +42,6 @@ export const oauth2Login = async (dispatch: AppDispatch) => {
     await getCsrfToken(); // If needed for CSRF protection
     window.location.href = `http://localhost:8080/oauth2/authorization/github`;
   } catch (error) {
-    dispatch(loginFailed(error.message));
+    dispatch(loginFailed('Failed to fetch user info' + error));
   }
 };
