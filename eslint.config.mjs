@@ -43,6 +43,7 @@ export default tseslint.config(
       'prefer-const': 'error',
       'no-nested-ternary': 'error',
       'prettier/prettier': 'warn',
+      '@typescript-eslint/no-explicit-any': 'off',
     },
   },
   {
